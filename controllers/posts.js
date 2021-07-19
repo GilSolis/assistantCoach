@@ -3,6 +3,14 @@ const path = require("path");
 const cloudinary = require("../middleware/cloudinary")
 
 module.exports = {
+      getTeams: async (req,res)=>{
+        try{
+            const posts = await Post.find({user:req.user.id})
+            res.render('teams.ejs', {posts: posts, user: req.user})
+        }catch(err){
+            console.log(err)
+        }
+    },
     getProfile: async (req,res)=>{
         try{
             const posts = await Post.find({user:req.user.id})
