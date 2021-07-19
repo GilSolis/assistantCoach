@@ -1,4 +1,3 @@
-https://api.myfantasyleague.com/2021/export?TYPE=myleagues&YEAR=2021&FRANCHISE_NAMES=suitedkings&JSON=1
 
 document.getElementById('getTeams').addEventListener('click', getTeams)
 
@@ -11,3 +10,4 @@ async function getTeams(){
 
 }
 getTeams()
+
